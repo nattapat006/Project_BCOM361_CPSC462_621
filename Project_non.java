@@ -1,7 +1,7 @@
 import java.io.*;
 import java.lang.*;
 import java.util.regex.*;
-class updtxt {
+class Project_non {
   public static void main(String args[]) throws IOException {
     String waitopt;
     BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));    
