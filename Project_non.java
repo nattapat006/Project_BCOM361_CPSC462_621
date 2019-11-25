@@ -34,17 +34,17 @@ class Project_non {
 
       else if (buf.equals("4") || buf.equals("l1")) 
       {
-        list("updtxt1.dat");
+        list("student.dat");
         buf = " ";
       } 
       		else if (buf.equals("5") || buf.equals("l2")) 
       		{
-       		list("updtxt2.dat");
+       		list("subject.dat");
        		buf = " ";
       		}
       			else if (buf.equals("6") || buf.equals("l3"))
       			{
-        		list("updtxt3.dat");
+        		list("register.dat");
        			buf = " ";
       			}
 
@@ -121,9 +121,9 @@ class Project_non {
 // ======================================================
   static void displaymenu () {
     System.out.println("0 : bye bye");
-    System.out.println("1 : Create 3 fields, 3 records for updtxt1.dat");
-    System.out.println("2 : Create 3 fields, 3 records for updtxt2.dat");
-    System.out.println("3 : Create 4 fields, 4 records for updtxt3.dat");
+    System.out.println("1 : Create 3 fields, 3 records for student.dat");
+    System.out.println("2 : Create 3 fields, 3 records for subject.dat");
+    System.out.println("3 : Create 4 fields, 4 records for register.dat");
     System.out.println("4 : List all records to Student");
     System.out.println("5 : List all records to Subjects");
     System.out.println("6 : List all records to Register");
@@ -142,7 +142,7 @@ class Project_non {
   }
 // ======================================================
   public static void student () throws IOException {
-    FileOutputStream fout = new FileOutputStream("updtxt1.dat");
+    FileOutputStream fout = new FileOutputStream("student.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     pout.println("6008111001,Ms.Kronwarin Putthawong,Female");
@@ -153,7 +153,7 @@ class Project_non {
   }
 // =======================
    public static void subjects () throws IOException {
-    FileOutputStream fout = new FileOutputStream("updtxt2.dat");
+    FileOutputStream fout = new FileOutputStream("subject.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     pout.println("311,Management information systems : MIS,3");
@@ -164,7 +164,7 @@ class Project_non {
   }
 // =======================
    public static void register () throws IOException {
-    FileOutputStream fout = new FileOutputStream("updtxt3.dat");
+    FileOutputStream fout = new FileOutputStream("register.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     pout.println("101,311,A,1");
@@ -199,7 +199,7 @@ class Project_non {
     sex = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt1.dat");
+    FileReader fin = new FileReader("student.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -209,7 +209,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt1.dat");
+    FileOutputStream fout = new FileOutputStream("student.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -236,7 +236,7 @@ class Project_non {
     credit = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt2.dat");
+    FileReader fin = new FileReader("subject.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -246,7 +246,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt2.dat");
+    FileOutputStream fout = new FileOutputStream("subject.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -275,7 +275,7 @@ class Project_non {
     sec = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt3.dat");
+    FileReader fin = new FileReader("register.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -285,7 +285,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt3.dat");
+    FileOutputStream fout = new FileOutputStream("register.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -309,7 +309,7 @@ class Project_non {
     bufid = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt1.dat");
+    FileReader fin = new FileReader("student.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -319,7 +319,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt1.dat");
+    FileOutputStream fout = new FileOutputStream("student.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -341,7 +341,7 @@ class Project_non {
     bufid = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt2.dat");
+    FileReader fin = new FileReader("subject.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -351,7 +351,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt2.dat");
+    FileOutputStream fout = new FileOutputStream("subject.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -373,7 +373,7 @@ class Project_non {
     bufid = stdin.readLine();
     String b;
     String ar[] = new String[10];
-    FileReader fin = new FileReader("updtxt3.dat");
+    FileReader fin = new FileReader("register.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -383,7 +383,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt3.dat");
+    FileOutputStream fout = new FileOutputStream("register.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -410,7 +410,7 @@ class Project_non {
     sex = stdin.readLine();
     String b;
     String ar[] = new String[10];
-    FileReader fin = new FileReader("updtxt1.dat");
+    FileReader fin = new FileReader("student.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -420,7 +420,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt1.dat");
+    FileOutputStream fout = new FileOutputStream("student.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -444,7 +444,7 @@ class Project_non {
     credit = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt2.dat");
+    FileReader fin = new FileReader("subject.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -454,7 +454,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt2.dat");
+    FileOutputStream fout = new FileOutputStream("subject.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -480,7 +480,7 @@ class Project_non {
     sec = stdin.readLine();
     String b;
     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt3.dat");
+    FileReader fin = new FileReader("register.dat");
     BufferedReader bin = new BufferedReader (fin);
     int i = 0;
     while ((b =  bin.readLine()) != null) {      
@@ -490,7 +490,7 @@ class Project_non {
     fin.close();
     //
     int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt3.dat");
+    FileOutputStream fout = new FileOutputStream("register.dat");
     BufferedOutputStream bout = new BufferedOutputStream(fout);
     PrintStream pout = new PrintStream(bout);
     i = 0;
@@ -506,34 +506,17 @@ class Project_non {
 // ======================================================
     public static void transcript () throws IOException {
     BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-    int i = 0,t1,t2,t3;
-    String b,subjectid,bufid,a;
+     int i = 0,t1,t2,t3;
+    String b,student,bufidstu,subject,register;
     String[] fields;
     String[] recs1 = new String[100];
     String[] recs2 = new String[100];
     String[] recs3 = new String[100];
 
-    System.out.print("Wait Student ID : ");
-    bufid = stdin.readLine();
-     String ar[] = new String[100];
-    FileReader fin = new FileReader("updtxt1.dat");
-    BufferedReader bin = new BufferedReader (fin);
-    int i = 0;
-    while ((a =  bin.readLine()) != null) {      
-      ar[i] = a; 
-      i = i + 1;
-    }    
-    fin.close();
-    //
-    int tot = i;
-    FileOutputStream fout = new FileOutputStream("updtxt1.dat");
-    BufferedOutputStream bout = new BufferedOutputStream(fout);
-    PrintStream pout = new PrintStream(bout);
-    i = 0;
-    while (i < tot) {      
-      if (bufid.equals(ar[i].substring(0,10))) 
-      {
-         FileReader fin = new FileReader("updtxt1.dat");
+    System.out.print("Wait Student  ID : ");
+    bufidstu = stdin.readLine();
+
+    FileReader fin = new FileReader("register.dat");
     BufferedReader bin = new BufferedReader (fin);
     while ((b =  bin.readLine()) != null) {
       recs1[i] = b;
@@ -543,7 +526,7 @@ class Project_non {
     t1 = i;
     i = 0;
     //
-    FileReader fin2 = new FileReader("updtxt2.dat");
+    FileReader fin2 = new FileReader("student.dat");
     BufferedReader bin2 = new BufferedReader (fin2);
     while ((b =  bin2.readLine()) != null) {
       recs2[i] = b;
@@ -552,44 +535,68 @@ class Project_non {
     }
     fin2.close();
     t2 = i;
+    i = 0;
     //
-    FileReader fin3 = new FileReader("updtxt3.dat");
+    FileReader fin3 = new FileReader("subject.dat");
     BufferedReader bin3 = new BufferedReader (fin3);
     while ((b =  bin3.readLine()) != null) {
       recs3[i] = b;
-
       i = i + 1;
     }
     fin3.close();
     t3 = i;
+    i= 0;
     //
-    for (int x=0; x<t1; x++) 
+    for(int j=0;j<t1;j++) 
     {
-    fields = recs1[x].split(",");
-	      System.out.println("Student ID"+" : "+fields[0]);
-	      System.out.println("Name : "+ fields[1] );
-	    for(int j=0;j<t2;j++) 
-	    {
-	      fields = recs2[j].split(",");
-	      System.out.println("Subjects" +" : "+ fields[1]);
-	      subjectid = fields[0];
-	      for(int k=0;k<t3;k++) 
-	      {
-	        fields = recs3[k].split(",");
-	        if (fields[1].equals(subjectid)) 
-	        {
-	           System.out.println("Grade"+" : "+ fields[2]);
-	        }
-	      }
-	    }
-	    //System.out.println("Grade" +" : "+"A");
-	}
-      } else {
-        pout.println(ar[i]);
+      fields = recs1[j].split(",");
+      if(Integer.parseInt(fields[0]) == Integer.parseInt(bufidstu))
+      {
+      student = fields[0]; 
+      for(int k=0;k<t2;k++) {
+        fields = recs2[k].split(",");
+        if (Integer.parseInt(fields[0]) == Integer.parseInt(student)) 
+        {
+          System.out.println("Name : "+fields[1]);
+        }
+       }
       }
-      i = i + 1;
-    }
-    pout.close();
+     }
+
+  for(int j=0;j<t1;j++) 
+  {
+      fields = recs1[j].split(",");
+      if(Integer.parseInt(fields[0]) == Integer.parseInt(bufidstu))
+      {
+        System.out.println("Subject ID : " + fields[1]);
+      subject = fields[1];   
+      for(int q=0;q<t3;q++) 
+      {
+        fields = recs3[q].split(",");
+        if (Integer.parseInt(fields[0]) == Integer.parseInt(subject)) 
+        {
+        System.out.println("Subject : "+fields[1]);
+        }
+       }
+      }
+     }
+
+    for(int j=0;j<t2;j++) 
+    {
+      fields = recs2[j].split(",");
+      if(Integer.parseInt(fields[0]) == Integer.parseInt(bufidstu))
+      {
+      register = fields[0];   
+      for(int q=0;q<t1;q++) 
+      {
+        fields = recs1[q].split(",");
+        if (Integer.parseInt(fields[0]) == Integer.parseInt(register)) 
+        {
+        System.out.println("Grade : "+ fields[2]);
+        }
+       }
+      }
+     }*/
   }
 // ======================================================
   public static void myprofile () throws IOException 
