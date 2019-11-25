@@ -509,9 +509,9 @@ class Project_non {
      int i = 0,t1,t2,t3;
     String b,student,bufidstu,subject,register;
     String[] fields;
-    String[] recs1 = new String[100];
-    String[] recs2 = new String[100];
-    String[] recs3 = new String[100];
+    String[] recs1 = new String[10000000000];
+    String[] recs2 = new String[10000000000];
+    String[] recs3 = new String[10000000000];
 
     System.out.print("Wait Student  ID : ");
     bufidstu = stdin.readLine();
@@ -596,7 +596,7 @@ class Project_non {
         }
        }
       }
-     }*/
+     }
   }
 // ======================================================
   public static void myprofile () throws IOException 
